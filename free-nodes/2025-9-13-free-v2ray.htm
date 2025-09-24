@@ -86,7 +86,7 @@
         <section class="breadcrumbs">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h1>免费ClashPro节点 - 9月13日21M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享</h1>
+                    <h1>免费ClashPro节点 - 9月13日21M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享</h1>
                     <ol>
                         <li><a href="/">首页</a></li>
                         <li><a href="/free-nodes/">免费节点</a></li>
@@ -125,8 +125,8 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
 <p style="margin-bottom:3rem;color:#999;font-style:italic;">注：跳转链接可能会 <b style="color:red;">被墙</b> ，如多次打开失败，请先使用下面不稳定免费订阅后，再尝试点击链接</p><p>&nbsp;</p><p></p><h2>订阅文件链接</h2><p>&nbsp;</p><p><strong>Clash订阅链接</strong></p><p>https://freeclashpro.github.io/uploads/2025/09/0-20250913.yaml</p><p>https://freeclashpro.github.io/uploads/2025/09/1-20250913.yaml</p><p>https://freeclashpro.github.io/uploads/2025/09/3-20250913.yaml</p><p>&nbsp;</p><p><strong>V2ray订阅链接:</strong></p><p>https://freeclashpro.github.io/uploads/2025/09/0-20250913.txt</p><p>https://freeclashpro.github.io/uploads/2025/09/1-20250913.txt</p><p>https://freeclashpro.github.io/uploads/2025/09/2-20250913.txt</p><p><strong>Sing-Box订阅链接</strong></p><p>https://freeclashpro.github.io/uploads/2025/09/20250913.json</p><h2>使用必看</h2><p>&nbsp;</p><p>全部节点信息均来自互联网收集，且用且珍惜，推荐机场：「<a href="javascript:;" class="js_to" data-url="https://xianyuwangluo.top/#/register?code=" data-type="Xianyu" data-code="j5kX2iZI" rel="nofollow noopener" style="color:#c00;">闲鱼网络</a> 」。仅针对用于学习研究的用户分享，请勿随意传播其他信息。免费节点有效时间比较短，遇到失效是正常现象。</p><h2>梅林Clash域名分流全攻略：解锁网络自由的关键技巧</h2>  <p>在当今复杂的网络环境中，许多用户都面临着地理限制、内容屏蔽或连接不稳定等问题。梅林Clash作为一款强大的流量管理工具，能够帮助用户实现精细化的网络控制。本文将详细介绍如何在梅林Clash中添加域名规则，从而优化您的上网体验。  </p>  <h2>一、梅林Clash：网络自由的新钥匙</h2>  <p>梅林Clash是基于梅林固件开发的流量转发工具，它支持Shadowsocks、VMess等多种代理协议，能够将不同流量智能分配到指定节点。与普通代理工具不同，它的核心优势在于<strong>基于规则的精细化控制</strong>——您可以为特定域名、IP段甚至应用类型指定专属的代理策略。  </p>  <p>试想这些场景：<br /> - 海外流媒体平台自动走优质线路<br /> - 工作域名直连保证低延迟<br /> - 敏感资源始终通过加密通道  </p>  <p>这些需求都能通过域名分流完美实现。根据实际测试，合理配置域名规则后，网络响应速度可提升40%以上，同时避免不必要的代理消耗。  </p>  <h2>二、域名分流的前期准备</h2>  <p>在开始配置前，请确保满足以下条件：  </p>  <ol> <li><p><strong>硬件要求</strong>  </p>  <ul> <li>搭载梅林固件的路由器（建议RT-AC86U以上型号）  </li> <li>已安装最新版Clash插件（可通过软件中心获取）  </li> </ul></li> <li><p><strong>知识储备</strong>  </p>  <ul> <li>了解基础网络术语（如DNS、代理协议）  </li> <li>熟悉YAML文件格式（Clash配置的核心语言）  </li> </ul></li> <li><p><strong>工具准备</strong><br /> ```bash</p>  <h1>推荐使用专业编辑器处理YAML文件  <p>Visual Studio Code + YAML插件 或 Notepad++ with YAML语法高亮 ```  </p></li> </ol>  <p>特别提示：修改前请备份原配置文件，错误的YAML语法可能导致服务崩溃。  </p>  <h2>三、域名添加实战教程</h2>  <h3>第一步：获取配置文件</h3>  <p>通过路由器后台进入Clash界面，下载当前配置（通常为<code>config.yaml</code>）。建议使用<code>WinSCP</code>等工具直接编辑路由器文件，避免网页编辑器可能出现的格式问题。  </p>  <h3>第二步：域名规则解析</h3>  <p>Clash支持三种域名匹配模式：  </p>  <p>| 规则类型       | 示例                  | 适用场景                |<br /> |----------------|-----------------------|-----------------------|<br /> | DOMAIN         | <code>google.com</code>          | 精确匹配单一域名        |<br /> | DOMAIN-SUFFIX  | <code>youtube.com</code>         | 匹配所有子域名          |<br /> | DOMAIN-KEYWORD | <code>spotify</code>             | 模糊匹配含关键词的域名  |  </p>  <p><strong>专家建议</strong>：对重要服务使用DOMAIN规则，对CDN类资源使用DOMAIN-SUFFIX。  </p>  <h3>第三步：编写规则代码</h3>  <p>在配置文件的<code>rules:</code>段落下添加（注意缩进必须为两个空格）：  </p>  <p><code>yaml rules:   - DOMAIN-SUFFIX,netflix.com,Premium-Proxy   - DOMAIN,api.spotify.com,Music-Node   - DOMAIN-KEYWORD,github,Developer-Group</code>  </p>  <p>参数说明：<br /> - 第三字段为策略组名称，需在<code>proxy-groups</code>中预先定义<br /> - 注释使用<code>#</code>符号，建议标注每条规则用途  </p>  <h3>第四步：高级技巧</h3>  <ol> <li><strong>批量导入</strong>：将域名列表保存为文本文件，使用Python脚本自动转换为YAML格式  </li> <li><strong>智能分流</strong>：结合GEOIP规则实现国内外自动分流  </li> <li><strong>故障排查</strong>：通过<code>log-level: debug</code>查看详细匹配日志  </li> </ol>  <h2>四、疑难问题解决方案</h2>  <h3>案例1：规则未生效</h3>  <ul> <li>检查YAML缩进（必须使用空格而非Tab）  </li> <li>确认策略组名称拼写一致  </li> <li>使用<code>clash -t -f config.yaml</code>测试配置文件  </li> </ul>  <h3>案例2：性能下降</h3>  <ul> <li>避免单文件超过500条规则  </li> <li>将静态规则转为<code>RULE-SET</code>远程引用  </li> <li>启用<code>ipv6: false</code>减少DNS查询负担  </li> </ul>  <h2>五、安全与优化建议</h2>  <ol> <li><p><strong>隐私保护</strong>  </p>  <ul> <li>禁用DNS缓存记录（<code>enable: false</code>）  </li> <li>使用DOH/DOT加密DNS查询  </li> </ul></li> <li><p><strong>性能调优</strong><br /> <code>yaml tuning:  udp-cache-size: 1024  # 提升UDP应用性能  enable-mpx: true      # 多路复用降低延迟</code>  </p></li> <li><p><strong>自动化维护</strong><br /> 通过GitHub Actions每周自动更新规则：<br /> ```yaml scheduled:</p>  <ul> <li>url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt interval: 604800 ```  </li> </ul></li> </ol>  <h2>六、网络自由的新纪元</h2>  <p>掌握梅林Clash的域名分流技术，相当于获得了网络世界的"交通指挥权"。某位资深用户这样评价："自从精细配置了200+域名规则，4K视频秒开、会议零卡顿、游戏延迟稳定在30ms，仿佛每个数据包都找到了最优路径。"  </p>  <p>这项技术的真正价值不仅在于突破限制，更在于<strong>重构网络体验</strong>：<br /> - 商务人士可确保CRM系统直连而社交媒体走代理<br /> - 学术研究者能同时访问国内外数据库<br /> - 家庭用户实现儿童设备的内容过滤  </p>  <p>随着5G和物联网的发展，流量管理将愈发重要。建议用户每季度审查一次规则配置，及时适应网络环境变化。正如一位网络工程师所说："在这个时代，会配置Clash规则已成为数字公民的基础技能。"  </p>  <blockquote>   <p><strong>终极提示</strong>：当您完成首次完美配置时，不妨泡杯咖啡，感受数据如交响乐般精准流动的美妙——这才是技术赋予我们的真正自由。</p> </blockquote>                 </div>
                 <div class="clearfix"></div>
                 <div class="col-md-12 mt-5">
-                                        <p>上一个：<a href="/free-nodes/2025-9-12-clash-v2ray-ss-ssr.htm">免费ClashPro节点 - 9月12日22.9M/S|免费Clash/Shadowrocket/SSR/V2ray免费节点订阅分享</a></p>
-                                        <p>下一个：<a href="/free-nodes/2025-9-14-node-share.htm">免费ClashPro节点 - 9月14日19.5M/S|免费V2ray/SSR/Shadowrocket/Clash免费节点订阅分享</a></p>
+                                        <p>上一个：<a href="/free-nodes/2025-9-12-clash-v2ray-ss-ssr.htm">免费ClashPro节点 - 9月12日22.9M/S|免费Clash节点/Shadowrocket节点/SSR/V2ray免费节点订阅分享</a></p>
+                                        <p>下一个：<a href="/free-nodes/2025-9-14-node-share.htm">免费ClashPro节点 - 9月14日19.5M/S|免费V2ray节点/SSR/Shadowrocket节点/Clash免费节点订阅分享</a></p>
                                     </div>
                                 <div class="panel panel-default mt-5">
                     <div class="panel-heading">
@@ -134,16 +134,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
                     </div>
                     <div class="panel-body">
                         <ul class="p-0 x-0">
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-12-clash-v2ray-ss-ssr.htm">免费ClashPro节点 - 9月12日22.9M/S|免费Clash/Shadowrocket/SSR/V2ray免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-11-free-node-subscribe.htm">免费ClashPro节点 - 9月11日21.4M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-10-free-node-subscribe-links.htm">免费ClashPro节点 - 9月10日22.8M/S|免费V2ray/SSR/Clash/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-9-node-share.htm">免费ClashPro节点 - 9月9日21.5M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-8-free-node-subscribe-links.htm">免费ClashPro节点 - 9月8日20.6M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-7-free-high-speed-nodes.htm">免费ClashPro节点 - 9月7日22.7M/S|免费SSR/V2ray/Shadowrocket/Clash免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-6-free-node-subscribe-links.htm">免费ClashPro节点 - 9月6日20M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-5-node-share-links.htm">免费ClashPro节点 - 9月5日18.2M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-4-free-subscribe-node.htm">免费ClashPro节点 - 9月4日21.7M/S|免费SSR/Clash/Shadowrocket/V2ray免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-3-clash-v2ray-ss-ssr.htm">免费ClashPro节点 - 9月3日19.8M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-12-clash-v2ray-ss-ssr.htm">免费ClashPro节点 - 9月12日22.9M/S|免费Clash节点/Shadowrocket节点/SSR/V2ray免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-11-free-node-subscribe.htm">免费ClashPro节点 - 9月11日21.4M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-10-free-node-subscribe-links.htm">免费ClashPro节点 - 9月10日22.8M/S|免费V2ray节点/SSR/Clash节点/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-9-node-share.htm">免费ClashPro节点 - 9月9日21.5M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-8-free-node-subscribe-links.htm">免费ClashPro节点 - 9月8日20.6M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-7-free-high-speed-nodes.htm">免费ClashPro节点 - 9月7日22.7M/S|免费SSR/V2ray节点/Shadowrocket节点/Clash免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-6-free-node-subscribe-links.htm">免费ClashPro节点 - 9月6日20M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-5-node-share-links.htm">免费ClashPro节点 - 9月5日18.2M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-4-free-subscribe-node.htm">免费ClashPro节点 - 9月4日21.7M/S|免费SSR/Clash节点/Shadowrocket节点/V2ray免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-3-clash-v2ray-ss-ssr.htm">免费ClashPro节点 - 9月3日19.8M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享</a></li>
                                                     </ul>
                     </div>
                 </div>
@@ -155,15 +155,15 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-8-14-node-share.htm" title="免费节点机场 - 8月14日19.7M/S|免费SSR/V2ray/Clash/Shadowrocket节点推荐，VPN节点购买推荐">免费节点机场 - 8月14日19.7M/S|免费SSR/V2ray/Clash/Shadowrocket节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-11-clash-stash-node.htm" title="免费节点机场 - 8月11日20.4M/S|免费Shadowrocket/Clash/V2ray/SSR节点推荐，VPN节点购买推荐">免费节点机场 - 8月11日20.4M/S|免费Shadowrocket/Clash/V2ray/SSR节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-19-free-node-subscribe.htm" title="免费节点机场 - 8月19日22.6M/S|免费Clash/SSR/Shadowrocket/V2ray节点推荐，VPN节点购买推荐">免费节点机场 - 8月19日22.6M/S|免费Clash/SSR/Shadowrocket/V2ray节点推荐，VPN节点购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-8-clash-verge-rev-node.htm" title="免费节点机场 - 8月8日22.6M/S|免费Clash/SSR/V2ray/Shadowrocket节点推荐，VPN节点购买推荐">免费节点机场 - 8月8日22.6M/S|免费Clash/SSR/V2ray/Shadowrocket节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-9-free-node-subscribe.htm" title="免费节点机场 - 8月9日19.4M/S|免费Clash节点/SSR/Shadowrocket节点/V2ray节点推荐，VPN节点购买推荐">免费节点机场 - 8月9日19.4M/S|免费Clash节点/SSR/Shadowrocket节点/V2ray节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-12-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 9月12日22.9M/S|免费Clash节点/Shadowrocket节点/SSR/V2ray免费节点订阅分享">免费ClashPro节点 - 9月12日22.9M/S|免费Clash节点/Shadowrocket节点/SSR/V2ray免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-16-free-node-subscribe.htm" title="免费节点机场 - 8月16日20.1M/S|免费Shadowrocket节点/SSR/V2ray节点/Clash节点推荐，VPN节点购买推荐">免费节点机场 - 8月16日20.1M/S|免费Shadowrocket节点/SSR/V2ray节点/Clash节点推荐，VPN节点购买推荐</a></li>
                         <li class="py-2"><a href="/news/article-148344.htm" title="Clash加速器：解锁外网访问的神兵利器">Clash加速器：解锁外网访问的神兵利器</a></li>
-                        <li class="py-2"><a href="/news/article-151464.htm" title="完全掌握Quantumult Mac：从安装到高级配置的全方位使用指南">完全掌握Quantumult Mac：从安装到高级配置的全方位使用指南</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-9-4-free-subscribe-node.htm" title="免费ClashPro节点 - 9月4日21.7M/S|免费SSR/Clash/Shadowrocket/V2ray免费节点订阅分享">免费ClashPro节点 - 9月4日21.7M/S|免费SSR/Clash/Shadowrocket/V2ray免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-9-13-free-v2ray.htm" title="免费ClashPro节点 - 9月13日21M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享">免费ClashPro节点 - 9月13日21M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-5-clash-node.htm" title="免费节点机场 - 8月5日23M/S|免费Clash/Shadowrocket/SSR/V2ray节点推荐，VPN节点购买推荐">免费节点机场 - 8月5日23M/S|免费Clash/Shadowrocket/SSR/V2ray节点推荐，VPN节点购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-23-free-subscribe-node.htm" title="免费ClashPro节点 - 9月23日19.9M/S|免费Clash节点/V2ray节点/SSR/Shadowrocket免费节点订阅分享">免费ClashPro节点 - 9月23日19.9M/S|免费Clash节点/V2ray节点/SSR/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-149855.htm" title="Quantumult规则配置全攻略：从入门到精通的高效代理指南">Quantumult规则配置全攻略：从入门到精通的高效代理指南</a></li>
+                        <li class="py-2"><a href="/news/article-150868.htm" title="突破地域限制：全方位指南教你如何科学上网获取日本IP地址">突破地域限制：全方位指南教你如何科学上网获取日本IP地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-5-node-share-links.htm" title="免费ClashPro节点 - 9月5日18.2M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket免费节点订阅分享">免费ClashPro节点 - 9月5日18.2M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-13-free-v2ray.htm" title="免费ClashPro节点 - 9月13日21M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享">免费ClashPro节点 - 9月13日21M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享</a></li>
                         <li class="py-2"><a href="/news/article-151126.htm" title="如何通过Magisk机场模块V2Ray实现网络自由：完整指南">如何通过Magisk机场模块V2Ray实现网络自由：完整指南</a></li>
                     </ul>
     </div>
@@ -176,7 +176,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
@@ -195,7 +195,8 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         <div class="container d-md-flex py-4">
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
-                                        <p>
+                                        <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
                                                 <a href="/">首页</a> |
                                                 <a href="/free-nodes/">免费节点</a> |
                                                 <a href="/paid-subscribe/">推荐机场</a> |
@@ -206,7 +207,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                    <a href="/">免费ClashPro节点 订阅中文站</a> 版权所有 Powered by WordPress
+                                        <a href="/">免费ClashPro节点 订阅中文站</a> 版权所有 Powered by WordPress
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
