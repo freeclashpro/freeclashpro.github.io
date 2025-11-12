@@ -322,29 +322,9 @@ sudo ufw </span><span><span class="hljs-built_in">enable</span></span><span>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密如何保证数据安全？</h5></div>
+    <div class="panel-heading"><h5>Mihomo 的节点分组管理有哪些优势？</h5></div>
     <div class="panel-body">
-        AEAD 加密防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，可保证节点长期可用，提升数据安全和连接稳定性，同时降低被检测风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的节点测速结果如何优化网络体验？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 测量节点延迟和丢包率，将延迟低的节点优先使用。结合策略组和分流规则，可提升网页浏览、视频播放和游戏的访问速度和稳定性，优化整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密能防止哪些风险？</h5></div>
-    <div class="panel-body">
-        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，有助于保持节点长期可用，保证数据安全和连接稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式能在移动网络下提高稳定性吗？</h5></div>
-    <div class="panel-body">
-        可以。XTLS 降低加密开销，减少握手次数，适合移动网络高延迟或不稳定环境。结合策略组和多出口节点，可提升连接稳定性和访问速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点延迟排序功能如何使用？</h5></div>
-    <div class="panel-body">
-        Matsuri 会定期测速节点延迟，并结合策略组自动选择延迟最低节点。用户无需手动切换即可保持高速访问，优化网页、视频和游戏体验，提高网络稳定性。<hr />    </div>
+        节点分组可按用途、地区或延迟分类，结合策略组实现自动分流。方便用户管理大量节点，快速选择最佳节点，提高访问速度和连接稳定性，同时优化维护效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 使用 WebSocket + TLS 有哪些优势？</h5></div>
@@ -352,9 +332,29 @@ sudo ufw </span><span><span class="hljs-built_in">enable</span></span><span>
         WebSocket + TLS 可将 V2Ray 流量伪装成 HTTPS 请求，隐藏真实通信特征。结合域名伪装和策略组使用，可以有效绕过封锁，提高节点安全性和连接稳定性，保持长期稳定访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 的节点分组管理有哪些优势？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 节点排序如何提高视频播放流畅性？</h5></div>
     <div class="panel-body">
-        节点分组可按用途、地区或延迟分类，结合策略组实现自动分流。方便用户管理大量节点，快速选择最佳节点，提高访问速度和连接稳定性，同时优化维护效率。<hr />    </div>
+        Matsuri 会测速节点延迟，并结合策略组自动选择延迟低、稳定性高的节点处理视频流量。减少缓冲和卡顿，保证在线视频播放顺畅，提高整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密能防止哪些风险？</h5></div>
+    <div class="panel-body">
+        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，有助于保持节点长期可用，保证数据安全和连接稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的节点测速结果如何优化网络体验？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 测量节点延迟和丢包率，将延迟低的节点优先使用。结合策略组和分流规则，可提升网页浏览、视频播放和游戏的访问速度和稳定性，优化整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
+    <div class="panel-body">
+        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密如何保证数据安全？</h5></div>
+    <div class="panel-body">
+        AEAD 加密防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，可保证节点长期可用，提升数据安全和连接稳定性，同时降低被检测风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + Reality 模式相比普通 TLS 有什么优势？</h5></div>
@@ -362,14 +362,14 @@ sudo ufw </span><span><span class="hljs-built_in">enable</span></span><span>
         Reality 模式通过伪装握手和真实网站特征，提高流量隐蔽性，难以被 DPI 检测。TLS 模式更侧重加密和传输效率，Reality 更适合高封锁网络环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点排序如何提高视频播放流畅性？</h5></div>
+    <div class="panel-heading"><h5>Matsuri 节点延迟排序功能如何使用？</h5></div>
     <div class="panel-body">
-        Matsuri 会测速节点延迟，并结合策略组自动选择延迟低、稳定性高的节点处理视频流量。减少缓冲和卡顿，保证在线视频播放顺畅，提高整体网络体验。<hr />    </div>
+        Matsuri 会定期测速节点延迟，并结合策略组自动选择延迟最低节点。用户无需手动切换即可保持高速访问，优化网页、视频和游戏体验，提高网络稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
+    <div class="panel-heading"><h5>VLESS + XTLS 模式能在移动网络下提高稳定性吗？</h5></div>
     <div class="panel-body">
-        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。    </div>
+        可以。XTLS 降低加密开销，减少握手次数，适合移动网络高延迟或不稳定环境。结合策略组和多出口节点，可提升连接稳定性和访问速度。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -398,16 +398,16 @@ sudo ufw </span><span><span class="hljs-built_in">enable</span></span><span>
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-8-free-high-speed-nodes.htm" title="免费ClashPro节点 - 10月8日18.3M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 10月8日18.3M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-20-free-node-subscribe.htm" title="免费ClashPro节点 - 10月20日19.9M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 10月20日19.9M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点免费节点订阅分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-3-node-share.htm" title="免费ClashPro节点 - 11月3日19.4M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 11月3日19.4M/S|免费Singbox节点/Clash节点/V2ray节点/SSR节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-21-free-node-subscribe-links.htm" title="免费ClashPro节点 - 10月21日21.4M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 10月21日21.4M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-12-node-share-links.htm" title="免费ClashPro节点 - 10月12日21.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 10月12日21.6M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-7-free-v2ray-subscribe.htm" title="免费ClashPro节点 - 10月7日18.5M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 10月7日18.5M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-14-free-v2ray-subscribe.htm" title="免费ClashPro节点 - 10月14日19.6M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 10月14日19.6M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-6-free-high-speed-nodes.htm" title="免费ClashPro节点 - 10月6日19.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 10月6日19.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-16-free-node-subscribe.htm" title="免费ClashPro节点 - 10月16日22.2M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 10月16日22.2M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-23-free-v2ray-subscribe.htm" title="免费ClashPro节点 - 10月23日22.4M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 10月23日22.4M/S|免费SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-7-node-share-links.htm" title="免费ClashPro节点 - 11月7日21.4M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 11月7日21.4M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-27-node-share-links.htm" title="免费ClashPro节点 - 10月27日20.1M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 10月27日20.1M/S|免费SSR节点/Singbox节点/Shadowrocket节点/V2ray节点/Clash节点免费节点订阅分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-18-free-v2ray-subscribe.htm" title="免费ClashPro节点 - 10月18日22.6M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 10月18日22.6M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-24-free-v2ray.htm" title="免费ClashPro节点 - 10月24日18.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 10月24日18.9M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-5-node-share-links.htm" title="免费ClashPro节点 - 11月5日21.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 11月5日21.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-5-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 10月5日20.1M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 10月5日20.1M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Clash节点/SSR节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-1-free-high-speed-nodes.htm" title="免费ClashPro节点 - 11月1日23M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 11月1日23M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-11-free-high-speed-nodes.htm" title="免费ClashPro节点 - 11月11日19.3M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 11月11日19.3M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点免费节点订阅分享</a></li>
                     </ul>
     </div>
 </div>
@@ -419,7 +419,7 @@ sudo ufw </span><span><span class="hljs-built_in">enable</span></span><span>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">12</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
