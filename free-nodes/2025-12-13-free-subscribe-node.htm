@@ -311,9 +311,19 @@ A：SS是最基本的协议，SSR增加混淆和伪装功能，V2Ray则支持更
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash Premium 与普通版本有何不同？</h5></div>
+    <div class="panel-heading"><h5>Mihomo 启动后 CPU 占用高，有哪些优化建议？</h5></div>
     <div class="panel-body">
-        Clash Premium 是 Clash 的增强版，增加了 TUN 模式、脚本功能、流量统计与规则订阅等高级特性。它更适合有复杂分流需求的用户，尤其是需要对系统级代理进行全局控制的场景。<hr />    </div>
+        检查是否启用了大量日志或复杂脚本，关闭不必要的规则提供者与日志调试；在多核服务器上启用并发或调整线程数；更新到最新版本以获得性能优化，并监控是否有异常连接导致处理压力。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的本地 PAC 模式与全局模式有什么区别？</h5></div>
+    <div class="panel-body">
+        PAC 模式通过规则文件自动判定哪些域名走代理，能兼顾速度与便利；全局模式则所有流量都通过代理，适合调试或访问被完全屏蔽的网络。两者可在界面一键切换，根据需求灵活选择。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan-go 如何启用 WebSocket 支持？</h5></div>
+    <div class="panel-body">
+        在配置文件中将 transport 参数设置为 websocket，并指定 path 路径。客户端需同步使用相同路径及主机名。这样可将 Trojan 流量伪装为普通 WebSocket 通信以提升隐蔽性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 在使用订阅时要注意什么？</h5></div>
@@ -321,14 +331,9 @@ A：SS是最基本的协议，SSR增加混淆和伪装功能，V2Ray则支持更
         在 Shadowrocket 中添加订阅时，应确保链接以 https 开头且格式正确。此外，若节点更新失败，可尝试关闭缓存或重新获取订阅链接，以保证配置文件同步最新节点数据。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 如何通过策略组提升科学上网体验？</h5></div>
+    <div class="panel-heading"><h5>Clash Premium 与普通版本有何不同？</h5></div>
     <div class="panel-body">
-        PassWall2 结合策略组和延迟检测功能，可自动选择最优节点处理网页、视频和游戏流量。无需手动切换，保证访问速度、稳定性和整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan-go 如何启用 WebSocket 支持？</h5></div>
-    <div class="panel-body">
-        在配置文件中将 transport 参数设置为 websocket，并指定 path 路径。客户端需同步使用相同路径及主机名。这样可将 Trojan 流量伪装为普通 WebSocket 通信以提升隐蔽性。<hr />    </div>
+        Clash Premium 是 Clash 的增强版，增加了 TUN 模式、脚本功能、流量统计与规则订阅等高级特性。它更适合有复杂分流需求的用户，尤其是需要对系统级代理进行全局控制的场景。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 和 Nekoray 有何关系？</h5></div>
@@ -341,19 +346,14 @@ A：SS是最基本的协议，SSR增加混淆和伪装功能，V2Ray则支持更
         在相同环境下，Trojan 通常连接更快，因为它使用原生 TLS 通道；Vmess 则稍有额外的协议开销。但在配置合理的情况下，两者的速度差距不大，主要取决于服务器线路质量。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 如何通过策略组提升科学上网体验？</h5></div>
+    <div class="panel-body">
+        PassWall2 结合策略组和延迟检测功能，可自动选择最优节点处理网页、视频和游戏流量。无需手动切换，保证访问速度、稳定性和整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + XTLS 模式能减少握手延迟吗？</h5></div>
     <div class="panel-body">
         XTLS 通过减少握手次数和加密开销，降低延迟，特别适合短连接或高并发场景。结合策略组，可保证连接稳定性和访问速度，适用于移动网络和游戏环境。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 启动后 CPU 占用高，有哪些优化建议？</h5></div>
-    <div class="panel-body">
-        检查是否启用了大量日志或复杂脚本，关闭不必要的规则提供者与日志调试；在多核服务器上启用并发或调整线程数；更新到最新版本以获得性能优化，并监控是否有异常连接导致处理压力。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的本地 PAC 模式与全局模式有什么区别？</h5></div>
-    <div class="panel-body">
-        PAC 模式通过规则文件自动判定哪些域名走代理，能兼顾速度与便利；全局模式则所有流量都通过代理，适合调试或访问被完全屏蔽的网络。两者可在界面一键切换，根据需求灵活选择。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的分流规则如何支持视频加速？</h5></div>
@@ -387,16 +387,16 @@ A：SS是最基本的协议，SSR增加混淆和伪装功能，V2Ray则支持更
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-8-free-subscribe-node.htm" title="免费ClashPro节点 - 11月8日22.2M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 11月8日22.2M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-12-7-free-high-speed-nodes.htm" title="免费ClashPro节点 - 12月7日20.2M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 12月7日20.2M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-22-free-node-subscribe.htm" title="免费ClashPro节点 - 11月22日18M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 11月22日18M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-12-13-free-subscribe-node.htm" title="免费ClashPro节点 - 12月13日19.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 12月13日19.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Singbox节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-28-free-v2ray-subscribe.htm" title="免费ClashPro节点 - 11月28日19.4M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 11月28日19.4M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-29-free-subscribe-node.htm" title="免费ClashPro节点 - 11月29日21.7M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 11月29日21.7M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-7-node-share-links.htm" title="免费ClashPro节点 - 11月7日21.4M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 11月7日21.4M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-30-free-node-subscribe.htm" title="免费ClashPro节点 - 11月30日18.2M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 11月30日18.2M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/SSR节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-12-5-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 12月5日20.2M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 12月5日20.2M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-10-free-node-subscribe.htm" title="免费ClashPro节点 - 12月10日22.7M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 12月10日22.7M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-3-free-high-speed-nodes.htm" title="免费ClashPro节点 - 12月3日18.5M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 12月3日18.5M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-2-free-node-subscribe.htm" title="免费ClashPro节点 - 12月2日19.2M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 12月2日19.2M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-17-node-share.htm" title="免费ClashPro节点 - 11月17日19.8M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 11月17日19.8M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-1-free-node-subscribe.htm" title="免费ClashPro节点 - 12月1日19.7M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 12月1日19.7M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-4-free-subscribe-node.htm" title="免费ClashPro节点 - 12月4日18.4M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 12月4日18.4M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-14-free-subscribe-node.htm" title="免费ClashPro节点 - 11月14日20.5M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 11月14日20.5M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-27-node-share-links.htm" title="免费ClashPro节点 - 11月27日19.9M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 11月27日19.9M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点免费节点订阅分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-5-node-share-links.htm" title="免费ClashPro节点 - 11月5日21.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 11月5日21.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-7-free-high-speed-nodes.htm" title="免费ClashPro节点 - 12月7日20.2M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 12月7日20.2M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点免费节点订阅分享</a></li>
                     </ul>
     </div>
 </div>
@@ -408,7 +408,7 @@ A：SS是最基本的协议，SSR增加混淆和伪装功能，V2Ray则支持更
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
+                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
