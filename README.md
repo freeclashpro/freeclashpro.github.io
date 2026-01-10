@@ -1,4 +1,4 @@
-# 免费ClashPro节点 - 1月3日18.8M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点免费节点订阅分享  更新时间 2026-01-03 10:34:07
+# 免费ClashPro节点 - 1月10日21M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点免费节点订阅分享  更新时间 2026-01-10 10:44:14
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://freeclashpro.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://freeclashpro.github.io/uploads/2026/01/0-20260103.yaml
-- https://freeclashpro.github.io/uploads/2026/01/1-20260103.yaml
-- https://freeclashpro.github.io/uploads/2026/01/2-20260103.yaml
-- https://freeclashpro.github.io/uploads/2026/01/3-20260103.yaml
-- https://freeclashpro.github.io/uploads/2026/01/4-20260103.yaml
+- https://freeclashpro.github.io/uploads/2026/01/0-20260110.yaml
+- https://freeclashpro.github.io/uploads/2026/01/1-20260110.yaml
+- https://freeclashpro.github.io/uploads/2026/01/2-20260110.yaml
+- https://freeclashpro.github.io/uploads/2026/01/3-20260110.yaml
+- https://freeclashpro.github.io/uploads/2026/01/4-20260110.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://freeclashpro.github.io/uploads/2026/01/0-20260103.txt
-- https://freeclashpro.github.io/uploads/2026/01/1-20260103.txt
-- https://freeclashpro.github.io/uploads/2026/01/2-20260103.txt
-- https://freeclashpro.github.io/uploads/2026/01/3-20260103.txt
-- https://freeclashpro.github.io/uploads/2026/01/4-20260103.txt
+- https://freeclashpro.github.io/uploads/2026/01/0-20260110.txt
+- https://freeclashpro.github.io/uploads/2026/01/1-20260110.txt
+- https://freeclashpro.github.io/uploads/2026/01/2-20260110.txt
+- https://freeclashpro.github.io/uploads/2026/01/3-20260110.txt
+- https://freeclashpro.github.io/uploads/2026/01/4-20260110.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://freeclashpro.github.io/uploads/2026/01/20260103.json
+- https://freeclashpro.github.io/uploads/2026/01/20260110.json
 
 ## 更多Clash节点订阅 ：
 
