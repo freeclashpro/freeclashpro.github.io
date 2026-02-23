@@ -130,9 +130,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
+    <div class="panel-heading"><h5>WinXray 支持 Trojan 协议吗？</h5></div>
     <div class="panel-body">
-        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
+        WinXray 内核基于 Xray-core，因此原生支持 Trojan 协议。用户在导入配置时，只需选择 Trojan 类型节点即可，无需额外插件，非常适合需要 TLS 伪装的环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 如何导入 V2Ray 节点？</h5></div>
@@ -140,14 +140,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         打开 Nekoray 客户端后，点击“导入配置”，选择 V2Ray 或 Clash 类型的订阅链接。程序会自动解析节点列表，用户可一键连接或进行延迟测试。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 支持测速功能吗？</h5></div>
+    <div class="panel-heading"><h5>如何备份 Clash 配置文件？</h5></div>
     <div class="panel-body">
-        支持。WinXray 提供节点延迟测速功能，可检测每个节点的响应时间与可用性。测速结果能帮助用户选择最快线路，也能排除无效或不稳定的节点，提高整体网络体验。<hr />    </div>
+        Clash 的配置文件通常位于程序目录或配置文件夹中（如 Windows 下的 .config/clash）。用户可直接复制该 YAML 文件以备份，也可将订阅链接保存，便于后续恢复或在其他设备上同步使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 的订阅更新支持自动导入节点吗？</h5></div>
+    <div class="panel-heading"><h5>Shadowrocket 的日志界面怎么看节点状态？</h5></div>
     <div class="panel-body">
-        支持。Nekoray 可以通过订阅 URL 自动下载节点，并根据用户配置更新本地节点列表。定期更新确保节点始终可用，减少手动维护的麻烦，提高使用便利性。<hr />    </div>
+        Shadowrocket 的日志界面实时显示连接记录与节点响应延迟。绿色代表成功连接，红色代表失败，通过查看错误码可判断是 DNS 问题、TLS 握手失败还是代理超时。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Surfboard 与 Clash 有什么关系？</h5></div>
@@ -160,14 +160,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         使用独立非 root 用户运行 V2Ray，限制服务访问端口并仅开放必要端口；配置防火墙规则与 Fail2ban 限制暴力登录；定期更新内核与 V2Ray 版本，并关闭不必要的系统服务以减少攻击面。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>如何备份 Clash 配置文件？</h5></div>
+    <div class="panel-heading"><h5>WinXray 支持测速功能吗？</h5></div>
     <div class="panel-body">
-        Clash 的配置文件通常位于程序目录或配置文件夹中（如 Windows 下的 .config/clash）。用户可直接复制该 YAML 文件以备份，也可将订阅链接保存，便于后续恢复或在其他设备上同步使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 支持 Trojan 协议吗？</h5></div>
-    <div class="panel-body">
-        WinXray 内核基于 Xray-core，因此原生支持 Trojan 协议。用户在导入配置时，只需选择 Trojan 类型节点即可，无需额外插件，非常适合需要 TLS 伪装的环境。<hr />    </div>
+        支持。WinXray 提供节点延迟测速功能，可检测每个节点的响应时间与可用性。测速结果能帮助用户选择最快线路，也能排除无效或不稳定的节点，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
@@ -175,9 +170,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的日志界面怎么看节点状态？</h5></div>
+    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
     <div class="panel-body">
-        Shadowrocket 的日志界面实时显示连接记录与节点响应延迟。绿色代表成功连接，红色代表失败，通过查看错误码可判断是 DNS 问题、TLS 握手失败还是代理超时。    </div>
+        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 的订阅更新支持自动导入节点吗？</h5></div>
+    <div class="panel-body">
+        支持。Nekoray 可以通过订阅 URL 自动下载节点，并根据用户配置更新本地节点列表。定期更新确保节点始终可用，减少手动维护的麻烦，提高使用便利性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -206,16 +206,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-2-8-free-subscribe-node.htm" title="免费ClashPro节点 - 2月8日20.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点免费节点订阅分享">免费ClashPro节点 - 2月8日20.2M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-2-free-node-subscribe-links.htm" title="免费ClashPro节点 - 2月2日18.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 2月2日18.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-4-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 2月4日20.4M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 2月4日20.4M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-17-free-v2ray-subscribe.htm" title="免费ClashPro节点 - 1月17日21.3M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 1月17日21.3M/S|免费SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/Singbox节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-5-free-subscribe-node.htm" title="免费ClashPro节点 - 2月5日18.9M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 2月5日18.9M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-1-14-free-node-subscribe-links.htm" title="免费ClashPro节点 - 1月14日18.5M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 1月14日18.5M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/SSR节点免费节点订阅分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-1-22-free-node-subscribe.htm" title="免费ClashPro节点 - 1月22日20.1M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 1月22日20.1M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Clash节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-20-free-subscribe-node.htm" title="免费ClashPro节点 - 1月20日20.3M/S|免费Trojan节点/Clash节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 1月20日20.3M/S|免费Trojan节点/Clash节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-15-free-node-subscribe-links.htm" title="免费ClashPro节点 - 1月15日20.7M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 1月15日20.7M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-30-free-high-speed-nodes.htm" title="免费ClashPro节点 - 1月30日20.7M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 1月30日20.7M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-14-free-node-subscribe-links.htm" title="免费ClashPro节点 - 2月14日22.5M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 2月14日22.5M/S|免费SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-1-26-free-high-speed-nodes.htm" title="免费ClashPro节点 - 1月26日19.9M/S|免费Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 1月26日19.9M/S|免费Trojan节点/V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-4-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 2月4日20.4M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 2月4日20.4M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-13-node-share.htm" title="免费ClashPro节点 - 2月13日21M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 2月13日21M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-1-24-free-node-subscribe-links.htm" title="免费ClashPro节点 - 1月24日21M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 1月24日21M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-3-free-node-subscribe.htm" title="免费ClashPro节点 - 2月3日21.8M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 2月3日21.8M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-17-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 2月17日20.5M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点免费节点订阅分享">免费ClashPro节点 - 2月17日20.5M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-1-31-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 1月31日18.5M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 1月31日18.5M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-16-free-node-subscribe.htm" title="免费ClashPro节点 - 2月16日19.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 2月16日19.5M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/Trojan节点/SSR节点免费节点订阅分享</a></li>
                     </ul>
     </div>
 </div>
@@ -227,7 +227,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">15</span> <a href="/date/2026-02/" title="2026-02 归档">2026-02</a></h4>
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-02/" title="2026-02 归档">2026-02</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-01/" title="2026-01 归档">2026-01</a></h4>
