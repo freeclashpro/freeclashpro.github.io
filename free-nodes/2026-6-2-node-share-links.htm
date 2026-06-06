@@ -265,9 +265,34 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 全局与规则代理如何合理选择？</h5></div>
+    <div class="panel-body">
+        全局代理适合游戏或全局科学上网，将所有流量通过节点；规则代理仅对指定应用或 IP 走代理，可提高带宽利用率和访问效率，根据使用场景灵活选择模式。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的节点测速结果如何应用？</h5></div>
+    <div class="panel-body">
+        节点测速结果可用于策略组选择和自动切换，程序会根据延迟和丢包率选择最优节点。这样访问海外网站或流媒体时，可以保持高速和稳定的网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何设置？</h5></div>
+    <div class="panel-body">
+        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议参数如何提高抗封锁能力？</h5></div>
     <div class="panel-body">
         SSR 的协议参数可以模拟不同流量特征，使加密流量更像普通 HTTP 或 HTTPS。合理选择协议类型和混淆参数，可以有效降低被封锁的风险，提高节点长期可用性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何设置不同用户的带宽限制？</h5></div>
+    <div class="panel-body">
+        管理员可为每个用户设置独立的带宽上限和流量配额。超过配额后可自动阻断或降速，确保服务器资源合理分配，避免单个用户占用过多带宽而影响其他用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 节点手动切换有什么优势？</h5></div>
+    <div class="panel-body">
+        手动切换节点可以让用户根据网络延迟和用途选择最合适的节点，适合在节点不稳定或特殊访问需求下使用。虽然不自动，但可以灵活调整，提高访问效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 配置如何提高节点隐蔽性？</h5></div>
@@ -280,39 +305,14 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
         Sing-box 支持按端口匹配流量，将不同应用的流量分配到指定节点。结合策略组使用，可实现精准分流，优化访问速度和网络稳定性，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 是否支持 DNS 分流？</h5></div>
-    <div class="panel-body">
-        支持。Clash 可以自定义 DNS 服务器，并通过 rules 区分国内外域名解析方式。比如国内网站可使用本地 DNS，国外网站可走代理 DNS，从而提升访问速度与稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的节点测速结果如何应用？</h5></div>
-    <div class="panel-body">
-        节点测速结果可用于策略组选择和自动切换，程序会根据延迟和丢包率选择最优节点。这样访问海外网站或流媒体时，可以保持高速和稳定的网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 节点手动切换有什么优势？</h5></div>
-    <div class="panel-body">
-        手动切换节点可以让用户根据网络延迟和用途选择最合适的节点，适合在节点不稳定或特殊访问需求下使用。虽然不自动，但可以灵活调整，提高访问效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 的伪装域名配置有哪些注意事项？</h5></div>
     <div class="panel-body">
         伪装域名必须真实可访问且证书有效，否则无法建立连接。正确配置可隐藏真实流量特征，降低被封锁和检测风险，提高节点安全性和长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何设置？</h5></div>
+    <div class="panel-heading"><h5>Clash 是否支持 DNS 分流？</h5></div>
     <div class="panel-body">
-        用户可添加订阅 URL，Nekoray 会定期自动下载并更新节点列表。保持节点最新可减少手动维护，提高节点可用性和网络连接稳定性，确保科学上网体验顺畅。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何设置不同用户的带宽限制？</h5></div>
-    <div class="panel-body">
-        管理员可为每个用户设置独立的带宽上限和流量配额。超过配额后可自动阻断或降速，确保服务器资源合理分配，避免单个用户占用过多带宽而影响其他用户体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 全局与规则代理如何合理选择？</h5></div>
-    <div class="panel-body">
-        全局代理适合游戏或全局科学上网，将所有流量通过节点；规则代理仅对指定应用或 IP 走代理，可提高带宽利用率和访问效率，根据使用场景灵活选择模式。    </div>
+        支持。Clash 可以自定义 DNS 服务器，并通过 rules 区分国内外域名解析方式。比如国内网站可使用本地 DNS，国外网站可走代理 DNS，从而提升访问速度与稳定性。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -362,16 +362,16 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-13-node-share.htm" title="免费ClashPro节点 - 5月13日20.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 5月13日20.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-9-free-high-speed-nodes.htm" title="免费ClashPro节点 - 5月9日20.8M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 5月9日20.8M/S|免费Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点/V2ray节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-19-free-subscribe-node.htm" title="免费ClashPro节点 - 5月19日22.4M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点免费节点订阅分享">免费ClashPro节点 - 5月19日22.4M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-10-free-node-subscribe.htm" title="免费ClashPro节点 - 5月10日21.7M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 5月10日21.7M/S|免费SSR节点/Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/Singbox节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-8-node-share-links.htm" title="免费ClashPro节点 - 5月8日19.6M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点免费节点订阅分享">免费ClashPro节点 - 5月8日19.6M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-12-free-high-speed-nodes.htm" title="免费ClashPro节点 - 5月12日22.5M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 5月12日22.5M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-17-free-node-subscribe-links.htm" title="免费ClashPro节点 - 5月17日18.7M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 5月17日18.7M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-7-free-v2ray-subscribe.htm" title="免费ClashPro节点 - 5月7日22.1M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点免费节点订阅分享">免费ClashPro节点 - 5月7日22.1M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-16-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 5月16日19.5M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 5月16日19.5M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Singbox节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-22-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 5月22日21.2M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 5月22日21.2M/S|免费Trojan节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-18-node-share-links.htm" title="免费ClashPro节点 - 5月18日20.9M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点免费节点订阅分享">免费ClashPro节点 - 5月18日20.9M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-6-node-share-links.htm" title="免费ClashPro节点 - 5月6日18.7M/S|免费Clash节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 5月6日18.7M/S|免费Clash节点/Trojan节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-3-free-node-subscribe-links.htm" title="免费ClashPro节点 - 5月3日22.3M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 5月3日22.3M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-20-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 5月20日23M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点免费节点订阅分享">免费ClashPro节点 - 5月20日23M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-24-clash-v2ray-ss-ssr.htm" title="免费ClashPro节点 - 5月24日21.1M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 5月24日21.1M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-4-node-share.htm" title="免费ClashPro节点 - 6月4日19.5M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点免费节点订阅分享">免费ClashPro节点 - 6月4日19.5M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-26-free-node-subscribe.htm" title="免费ClashPro节点 - 5月26日18.7M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 5月26日18.7M/S|免费Trojan节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-1-free-subscribe-node.htm" title="免费ClashPro节点 - 6月1日22.4M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点免费节点订阅分享">免费ClashPro节点 - 6月1日22.4M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-14-free-node-subscribe.htm" title="免费ClashPro节点 - 5月14日18.2M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点免费节点订阅分享">免费ClashPro节点 - 5月14日18.2M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-15-free-high-speed-nodes.htm" title="免费ClashPro节点 - 5月15日21.8M/S|免费Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点免费节点订阅分享">免费ClashPro节点 - 5月15日21.8M/S|免费Trojan节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点/V2ray节点免费节点订阅分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -383,7 +383,7 @@ sudo </span><span><span class="hljs-built_in">mv</span></span><span> v2ray /usr/
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
+                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
